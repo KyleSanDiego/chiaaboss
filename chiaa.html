@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>No Button Chaos</title>
+<style>
+body {
+background-color: #FFC5C5; /* Light pink background */
+}
+
+#message {
+position: absolute;
+left: 50%;
+top: 30%;
+transform: translate(-50%, -50%);
+font-size: 24px;
+color: #FFFFFF; /* White text color */
+}
+
+#no-button {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+background-color: #FF69B4; /* Pink button color /
+color: #FFFFFF; / White text color */
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#yes-button {
+position: absolute;
+left: 50%;
+top: 45%;
+transform: translate(-50%, -50%);
+background-color: #FF69B4; /* Pink button color /
+color: #FFFFFF; / White text color */
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 768px) {
+#message {
+font-size: 18px;
+top: 20%;
+}
+
+#no-button {
+top: 40%;
+}
+
+#yes-button {
+top: 35%;
+}
+}
+</style>
+</head>
+<body>
+<p id="message">Would you go out on a date with me?</p>
+<button id="no-button" onclick="moveButton()">No</button>
+<button id="yes-button" onclick="showPopup()">Yes</button>
+<script>
+function moveButton() {
+var button = document.getElementById("no-button");
+var newX = Math.floor(Math.random() * (window.innerWidth - 100));
+var newY = Math.floor(Math.random() * (window.innerHeight - 100));
+button.style.left = newX + "px";
+button.style.top = newY + "px";
+}
+
+function showPopup() {
+window.location.href = "popup.html";
+}
+</script>
+</body>
+</html>
