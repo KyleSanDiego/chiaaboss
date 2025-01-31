@@ -12,9 +12,8 @@ position: absolute;
 left: 50%;
 top: 30%;
 transform: translate(-50%, -50%);
-font-size: 6vw; /* Responsive font size */
+font-size: 24px;
 color: #FFFFFF; /* White text color */
-text-align: center;
 }
 
 #no-button {
@@ -24,47 +23,38 @@ top: 50%;
 transform: translate(-50%, -50%);
 background-color: #FF69B4; /* Pink button color */
 color: #FFFFFF; /* White text color */
-padding: 4% 8%; /* Responsive padding */
+padding: 10px 20px;
 border: none;
-border-radius: 10px; /* Increased border radius */
+border-radius: 5px;
 cursor: pointer;
-font-size: 4vw; /* Responsive font size */
-width: 60vw; /* Responsive width */
-height: 15vh; /* Responsive height */
 }
 
 #yes-button {
 position: absolute;
 left: 50%;
-top: 55%;
-transform: translate(-50%, -50%);
-background-color: #FF69B4; /* Pink button color */
-color: #FFFFFF; / White text color */
-padding: 4% 8%; /* Responsive padding */
-border: none;
-border-radius: 10px; /* Increased border radius */
-cursor: pointer;
-font-size: 4vw; /* Responsive font size */
-width: 60vw; /* Responsive width */
-height: 15vh; /* Responsive height */
-}
-
-@media only screen and (max-width: 480px) {
-#message {
-top: 25%;
-font-size: 8vw; /* Increased font size for mobile */
-}
-#no-button {
 top: 45%;
-width: 100px; /* Increased width for mobile */
-height: 70pxh; /* Increased height for mobile */
-font-size: 20px; /* Increased font size for mobile */
+transform: translate(-50%, -50%);
+background-color: #FF69B4; /* Pink button color */
+color: #FFFFFF; /* White text color */
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
+
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 500px) {
+#message {
+font-size: 30px;
+top: 20%;
+}
+
+#no-button {
+top: 40%;
+}
+
 #yes-button {
-top: 50%;
-width: 100px; /* Increased width for mobile */
-height: 70px; /* Increased height for mobile */
-font-size: 20px; /* Increased font size for mobile */
+top: 35%;
 }
 }
 </style>
